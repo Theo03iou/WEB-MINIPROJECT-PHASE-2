@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        'header header '
+        'wrapper1 wrapper2'
+        'footer1 footer2 ';
+    grid-template-columns: 1fr 1fr;
+    color: black;   
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* START OF DEFINING THE GRID */
+
+.wrapper1 {
+    grid-area: wrapper1;
+    background-color: #F2EEEB;
+}
+
+.wrapper2 {
+    grid-area: wrapper2;
+    background-color: #d2b49c;
+    max-height: 100%;
+}
+
+/* END OF DEFINING THE GRID */
+
+/* START OF HEADER */
+
+header {
+    grid-area: header;
+    background-color: rgb(226, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 2rem 0;
+    
+}
+
+header p {
+    margin: 0 2.5rem;
+}
+
+header a {
+    /* box-shadow: 10px 5px 5px rgb(176, 176, 176); */
+
+    /* display: inline-flex; */
+    margin: 0 2.5rem;
+    text-decoration: none;
+    color: rgb(69, 62, 62);
+    transition: all 150ms ease-in-out;
+    padding: .3rem;
+    border-radius: 10%;
+}
+
+nav :hover {
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 5px 5px rgb(176, 176, 176);
+    letter-spacing: .1rem;
+
+}
+
+header a:nth-last-child(1) {
+    margin-right: 5rem;
+}
+
+/* END OF HEADER */
+
+
+/* START OF RIGHT SIDE INTRO */
+
+.introWrapper {
+    width: 50%;
+    margin: 5rem 10rem 4rem;
+}
+
+.introWrapper p {
+    font-size: 2rem;    
+}
+
+.introWrapper ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.TheoImage {
+    margin-top: 20rem;
+    width: 40%;
+    margin: auto;
+    
+}
+
+.TheoImage .TheoWrapper img{
+    width: 20rem;
+    border-radius: 1%;
+    margin-bottom: 4rem;
+    box-shadow: 7px 5px 5px rgb(59, 59, 59);
+}
+
+
+
+
+/* END ON INTRO */
+
+/* START OF SKILLSWRAPPER */
+
+.wrapper1 .skillsWrapper > p {
+    width: 10%;
+    margin: 4rem auto 1.3rem;
+    font-size: 2rem;
+}
+
+.wrapper1 .skills1 p {
+    text-align: center;
+    margin: 1rem;
+}
+
+/* END OF SKILLS WRAPPER */
+
+
+/* START OF QUALIFICATIONS */
+
+.wrapper1 .qualificationWrapper > p {
+    width: 30%;
+    margin: 2rem auto 1.3rem;
+    font-size: 2rem;
+
+}
+
+.wrapper1 .qualifications1 {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.wrapper1 .qualifications table {
+    /* background-color: rgb(213, 211, 211); */
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto 2rem;
+}
+
+.wrapper1 .qualifications table th {
+    padding-bottom: .3rem;
+}
+
+.wrapper1 hr {
+    width: 5rem;
+    margin: 3rem auto 0rem;
+}
+
+/* END OF QUALIFICATIONS */
+
+/* START OF FOOTER */
+
+footer {
+    padding: 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color:  rgb(69, 62, 62);
+    margin-left: 1rem;
+}
+
+
+.footer1 {
+    grid-area: footer1;
+    background-color: rgb(235, 234, 234);
+}
+
+.footer2 {
+    grid-area: footer2;
+    background-color: #BFA48E;
+}
+
+/* END OF FOOTER */

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /* height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        'header header '
+        'wrapper1 wrapper2'
+        'footer1 footer2 ';
+    grid-template-columns: 1fr 1fr; */
+    color: black;   
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F2EEEB;
+}
+
+/* START OF HEADER */
+
+header {
+    grid-area: header;
+    background-color: rgb(226, 224, 224);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 2rem 0;
+    
+}
+
+header p {
+    margin: 0 2.5rem;
+}
+
+header a {
+    /* box-shadow: 10px 5px 5px rgb(176, 176, 176); */
+
+    /* display: inline-flex; */
+    margin: 0 2.5rem;
+    text-decoration: none;
+    color: rgb(69, 62, 62);
+    transition: all 150ms ease-in-out;
+    padding: .3rem;
+    border-radius: 10%;
+}
+
+nav :hover {
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 5px 5px rgb(176, 176, 176);
+    letter-spacing: .1rem;
+}
+
+/* END OF HEADER */
+
+
+.signInDiv {
+    text-align: center;
+    margin: 5rem auto;
+    background-color: #d2b49c;
+    width: 40%;
+    height: 30rem;
+    border-radius: 1%;
+    border: solid #8a7767 1.5px;
+    box-shadow: 15px 15px 5px rgb(176, 176, 176);
+
+}
+
+.signInDiv > p {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin: 3rem auto 2rem auto;
+    letter-spacing: .3rem;
+    color: #2f2f2f;
+}
+
+form #email, #password {
+    text-align: left;
+    font-size: large;
+    padding: 1rem 5rem 1rem 1rem;
+    margin: 1rem;
+    transition: all 100ms ease-in-out;
+}
+
+#password:focus {
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+#email:focus {
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+form button {
+    border-radius: 10%;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: #F2EEEB;
+    letter-spacing: .1rem;
+}
+
+button:active {
+    background-color: #ccc9c6;
+}
+
+
+footer {
+    padding: 3%;
+    margin-top: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+    color:  rgb(69, 62, 62);
+    margin-left: 1rem;
+}
+
+
+footer {
+    background-color: rgb(202, 202, 202);
+}

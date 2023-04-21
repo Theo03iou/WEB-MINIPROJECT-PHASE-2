@@ -1,0 +1,87 @@
+body {
+    color: black;   
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F2EEEB;
+}
+
+/* START OF HEADER */
+
+header {
+    grid-area: header;
+    background-color: rgb(226, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 2rem 0;
+    
+}
+
+header p {
+    margin: 0 2.5rem;
+}
+
+header a {
+    margin: 0 2.5rem;
+    text-decoration: none;
+    color: rgb(69, 62, 62);
+    transition: all 150ms ease-in-out;
+    padding: .3rem;
+    border-radius: 10%;
+}
+
+nav :hover {
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 5px 5px rgb(176, 176, 176);
+    letter-spacing: .1rem;
+}
+
+/* END OF HEADER */
+
+
+/* START OF FOOTER  */
+
+.contactWrapper {
+    background-color: #d2b49c;
+    width: 25%;
+    margin: 5rem auto;
+    padding: 3%;
+    transition: all 100ms ease-in-out;
+    border-radius: 1%;
+    border: solid #8a7767 1.5px;
+    box-shadow: 15px 15px 5px rgb(176, 176, 176);
+    font-size: larger;
+}
+
+.contactWrapper h2 {
+    margin: 0rem 1rem;
+}
+
+.contactWrapper p {
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+footer {
+    padding: 3%;
+    margin-top: 2rem;
+    background-color: rgb(202, 202, 202);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color:  rgb(69, 62, 62);
+    margin-left: 1rem;
+}
